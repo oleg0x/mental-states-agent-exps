@@ -1,10 +1,12 @@
 type: sglang_chat
 
 # OpenAI-compatible SGLang server.
-server_address: http://127.0.0.1:21003
+#server_address: http://127.0.0.1:21003
+server_address: http://127.0.0.1:25000
 
 # Reference actor checkpoint.
-model_name: Qwen/Qwen3-4B-Instruct-2507
+model_name: /home/o.inozemcev/Qwen/Qwen3-4B-Instruct-2507
+#model_name: /home/o.inozemcev/Qwen/Qwen3-4B
 
 api_model_name: ""
 

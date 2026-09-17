@@ -85,6 +85,8 @@ class AlfWorldEnv(BaseEnv):
         else:
             raise ValueError(f"Unsupported ALFWorld training method: {training_method}")
 
+        max_env_steps = max(int(max_env_steps), int(getattr(self, "max_steps", 50)))
+
         env_id = textworld.gym.register_games(
             [game_file],
             request_infos,

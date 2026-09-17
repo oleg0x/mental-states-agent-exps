@@ -20,7 +20,9 @@ from agent_eval.envs import AlfWorldEnv, SciWorldEnv, WebShopEnv
 from agent_eval.envs.react import parse_react_action
 from agent_eval.paths import SCIENCEWORLD_JAR
 from agent_eval.tasks import AlfWorldTask, SciWorldTask, WebShopTask
-from agent_eval.critics import CRITIC_REGISTRY
+#from agent_eval.critics import CRITIC_REGISTRY
+from agent_eval.critics.base import BaseCritic
+from agent_eval.critics.qnet import QwenQNetCritic
 
 
 logger = logging.getLogger("agent_eval")
@@ -38,6 +40,10 @@ ENV_REGISTRY = {
     "alfworld": AlfWorldEnv,
     "sciworld": SciWorldEnv,
     "webshop": WebShopEnv,
+}
+
+CRITIC_REGISTRY = {
+    "qwen_qnet": QwenQNetCritic,
 }
 
 

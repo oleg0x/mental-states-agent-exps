@@ -2,8 +2,8 @@ type: qwen_qnet
 benchmark: alfworld
 
 # Overridden by the critic launcher.
-checkpoint_path: ""
-tokenizer_path: ""
+checkpoint_path: /home/o.inozemcev/CheckPoints/qlass-Qwen3-4B-Instruct-2507-alfworld-Q-recovered
+tokenizer_path: /home/o.inozemcev/Qwen/Qwen3-4B-Instruct-2507
 
 # Must match Qwen QNet training.
 max_prompt_tokens: 8192
